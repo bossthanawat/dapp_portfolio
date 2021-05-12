@@ -1,9 +1,7 @@
-import logo from "./logo.svg";
-import "./App.css";
 import { useState } from "react";
 import axios from "axios";
-function App() {
-  const [accountData, setAccountData] = useState({
+function Home() {
+  const [accountData] = useState({
     accountAddress: "",
     accouuntAlias: "",
   });
@@ -43,4 +41,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
