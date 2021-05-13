@@ -1,6 +1,6 @@
 const axios = require("axios");
 var fs = require("fs");
-let addressOBJArr = [
+export let addressOBJArr = [
   //token abi
   {
     address: "0x0fEAdcC3824E7F3c12f40E324a60c23cA51627fc",

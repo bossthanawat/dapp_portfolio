@@ -13,18 +13,18 @@ const Dashboard = lazy(() => import("./views/Dashboard"));
 const App = () => {
   return (
     <>
-    <SuspenseWithChunkError fallback={<PageLoader />}>
-      <Router history={history}>
-        <Switch>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/dashboard">
-            <Dashboard />
-          </Route>
-        </Switch>
-      </Router>
-    </SuspenseWithChunkError>
+      <SuspenseWithChunkError fallback={<PageLoader />}>
+        <Router history={history}>
+          <Switch>
+            <Route path="/" exact>
+              <Home />
+            </Route>
+            <Route path="/dashboard/:accountId">
+              <Dashboard />
+            </Route>
+          </Switch>
+        </Router>
+      </SuspenseWithChunkError>
     </>
   );
 };
